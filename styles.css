@@ -181,7 +181,7 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 510px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
@@ -189,4 +189,18 @@ button {
   .card {
     flex-direction: column;
   }
+}
+
+@media only screen and (max-width:995px) and (min-width:511px){
+
+  .card {
+    flex-direction: column;
+  }
+  #histories{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
 }
