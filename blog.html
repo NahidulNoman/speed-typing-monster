@@ -11,7 +11,17 @@
   </head>
   <body class="body">
         <p class="text-center fw-semibold fs-2 mt-3">BLOG</p>
-
+      <section class="container">
+        <div class="shadow-lg p-4 rounded-5">
+            <h2>Difference Between Local Storage, Session Storage</h2>
+            <p class="opacity-75">
+              1. localStorage and sessionStorage are almost identical and have the same API. The difference is that with sessionStorage, the data is persisted only until the window or tab is closed. With localStorage, the data is persisted until the user manually clears the browser cache or until your web app clears the data. <br>
+              2. The storage capacity of local storage is 5MB/10MB.	The storage capacity of session storage is 5MB. <br>
+              3. As it is not session-based, it must be deleted via javascript or manually.	It’s session-based and works per window or tab. This means that data is stored only for the duration of a session, i.e., until the browser (or tab) is closed.
+            </p>
+        </div>
+        
+      </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
