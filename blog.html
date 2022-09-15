@@ -12,7 +12,7 @@
   <body class="body">
         <p class="text-center fw-semibold fs-2 mt-3">BLOG</p>
       <section class="container">
-        <div class="shadow-lg p-4 rounded-5">
+        <div class="shadow-lg p-4 rounded-5 mb-5">
             <h2>Difference Between Local Storage, Session Storage</h2>
             <p class="opacity-75">
               1. localStorage and sessionStorage are almost identical and have the same API. The difference is that with sessionStorage, the data is persisted only until the window or tab is closed. With localStorage, the data is persisted until the user manually clears the browser cache or until your web app clears the data. <br>
@@ -20,7 +20,16 @@
               3. As it is not session-based, it must be deleted via javascript or manually.	It’s session-based and works per window or tab. This means that data is stored only for the duration of a session, i.e., until the browser (or tab) is closed.
             </p>
         </div>
-        
+        <div class="shadow-lg p-4 rounded-5 mb-5">
+          <h2>Difference Between Global Scope And Block Scope</h2>
+          <p class="opacity-75">
+            <span class="fw-semibold">In the global scope,</span> any variable can overwrite any other variable at any time. Global variables can be accessed from anywhere in a JavaScript program. Variables declared with var , let and const are quite similar when declared outside a block. This is why creating global variables and global functions in Javascript is potentially dangerous.<br>
+            <span class="fw-semibold">Block Level Scope,</span> This scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block scoped.
+          </p>
+        </div>
+        <div class="shadow-lg p-4 rounded-5 mb-5">
+          
+        </div>
       </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
