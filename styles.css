@@ -192,7 +192,6 @@ button {
 }
 
 @media only screen and (max-width:995px) and (min-width:511px){
-
   .card {
     flex-direction: column;
   }
@@ -201,6 +200,15 @@ button {
     gap: 15px;
     grid-template-columns: repeat(3, 1fr);
   }
+}
 
-
+@media only screen and (max-width:1580px) and (min-width:996px) {
+  .card {
+    flex-direction: column;
+  }
+  #histories{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
