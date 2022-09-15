@@ -15,20 +15,25 @@
         <div class="shadow-lg p-4 rounded-5 mb-5">
             <h2>Difference Between Local Storage, Session Storage</h2>
             <p class="opacity-75">
-              1. localStorage and sessionStorage are almost identical and have the same API. The difference is that with sessionStorage, the data is persisted only until the window or tab is closed. With localStorage, the data is persisted until the user manually clears the browser cache or until your web app clears the data. <br>
-              2. The storage capacity of local storage is 5MB/10MB.	The storage capacity of session storage is 5MB. <br>
-              3. As it is not session-based, it must be deleted via javascript or manually.	It’s session-based and works per window or tab. This means that data is stored only for the duration of a session, i.e., until the browser (or tab) is closed.
+              <span class="fw-semibold text-primary">The LocalStorage</span> object stores the data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year. The storage capacity of local storage is 5MB/10MB. <br>
+              <span class="fw-semibold text-primary">The SessionStorage</span> object is equal to the localStorage object, except that it stores the data for only one session. The data is deleted when the user closes the specific browser tab. The storage capacity of session storage is 5MB.
             </p>
         </div>
         <div class="shadow-lg p-4 rounded-5 mb-5">
           <h2>Difference Between Global Scope And Block Scope</h2>
           <p class="opacity-75">
-            <span class="fw-semibold">In the global scope,</span> any variable can overwrite any other variable at any time. Global variables can be accessed from anywhere in a JavaScript program. Variables declared with var , let and const are quite similar when declared outside a block. This is why creating global variables and global functions in Javascript is potentially dangerous.<br>
-            <span class="fw-semibold">Block Level Scope,</span> This scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block scoped.
+            <span class="fw-semibold text-primary">In the global scope,</span> any variable can overwrite any other variable at any time. Global variables can be accessed from anywhere in a JavaScript program. Variables declared with var , let and const are quite similar when declared outside a block. This is why creating global variables and global functions in Javascript is potentially dangerous.<br>
+            <span class="fw-semibold text-primary">Block Level Scope,</span> This scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block scoped.
           </p>
         </div>
         <div class="shadow-lg p-4 rounded-5 mb-5">
-          
+          <h2 >What is JavaScript Event Loop ?</h2>
+          <p class="opacity-75">
+            <span class="fw-semibold text-primary">Event loop</span> is an endless loop, which waits for tasks, executes them and then sleeps until it receives more tasks.
+            The event loop executes tasks from the event queue only when the call stack is empty i.e. there is no ongoing task.
+            The event loop allows us to use callbacks and promises.
+            The event loop executes the tasks starting from the oldest first.
+          </p>
         </div>
       </section>
 
